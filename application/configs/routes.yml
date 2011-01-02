@@ -1,0 +1,12 @@
+routes:
+  -
+    path: "/example/route"
+  -
+    path: "/another/:id/stuff"
+    params:
+      id:
+        type: integer
+
+root:
+  controller: index
+  action: index

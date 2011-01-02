@@ -1,0 +1,17 @@
+production:
+  database:
+    driver: mysql
+    host: localhost
+    username: regularuser
+    password: aSamplePassword
+    name: aroocms
+
+development:
+  inherits_from: production
+  database:
+    name: aroocms_development
+
+test:
+  inherits_from: production
+  database:
+    name: aroocms_test
